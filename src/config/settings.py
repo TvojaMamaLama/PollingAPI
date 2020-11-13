@@ -77,23 +77,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': 'PollService',
-#        'USER': 'postgres',
-#        'PASSWORD': '348275723',
-#        'HOST': 'localhost',  # для запуска в докере изменить на "poll_service_db"
-#        'PORT': '5432',
-#    }
-#}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'PollService',
+        'USER': 'postgres',
+        'PASSWORD': '348275723',
+        'HOST': 'localhost',  # для запуска в докере изменить на "poll_service_db"
+        'PORT': '5432',
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': 'db.sqlite3',
+#    }
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
